@@ -92,13 +92,13 @@ let korea = [
 
     {
         id : 15,
-        name : "제주도",
+        name : "제중도",
         eng_name : "Jeju"
     },
 
     {
         id : 16,
-        name : "울릉도",
+        name : "울렁도",
         eng_name : "Ulleung-gun"
     },
 
