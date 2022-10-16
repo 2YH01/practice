@@ -1,38 +1,292 @@
+/* 폰트 */
+@font-face {
+  font-family: "DalseoHealingBold";
+  src: url('./font/style/DalseoHealingBold.ttf');
+}
+
+/* 노말라이즈 */
 .App {
-  text-align: center;
+  font-family: "DalseoHealingBold";
+  background-color: #323232;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3, h4, h5 {
+  margin: 0;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h5 {
+  padding: 0px 10px;
+}
+
+span {
+  font-size: .7rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* 카드스크롤 디자인 */
+.scroll::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, );
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+/* 카드디자인 */
+.card {
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
   color: white;
+  border-radius: 5px;
+  width: auto;
+  height: 120px;
+  max-width: 210px;
+  white-space: normal;
+  overflow: auto;
+  opacity: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.card-focus {
+  opacity: 1;
+  transition : opacity .4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-0 {
+  top: 7.9%;
+  left: 58.5%;
+}
+
+.card-1 {
+  top: 10%;
+  left: 39%;
+}
+
+.card-2 {
+  top: 7%;
+  left: 29%;
+}
+
+.card-3 {
+  top: 13%;
+  left: 46%;
+}
+
+.card-4 {
+  top: 27%;
+  left: 40%;
+}
+
+.card-5 {
+  top: 29.8%;
+  left: 44.5%;
+}
+
+.card-6 {
+  top: 21%;
+  left: 51%;
+}
+
+.card-7 {
+  top: 28.7%;
+  left: 62.7%;
+}
+
+.card-8 {
+  top: 38%;
+  left: 61%;
+}
+
+.card-9 {
+  top: 39.4%;
+  left: 44%;
+}
+
+.card-10 {
+  top: 52.4%;
+  left: 41%;
+}
+
+.card-11 {
+  top: 49%;
+  left: 37.3%;
+}
+
+.card-12 {
+  top: 45%;
+  left: 58%;
+}
+
+.card-13 {
+  top: 48%;
+  left: 68%;
+}
+
+.card-14 {
+  top: 42.5%;
+  left: 69.5%;
+}
+
+.card-15 {
+  top: 78%;
+  left: 34%;
+}
+
+.card-16 {
+  top: 7.8%;
+  left: 73%;
+}
+
+.card-17 {
+  top: 11%;
+  left: 77%;
+}
+
+/* 메인 이미지 디자인 */
+.main-img {
+  margin: auto;
+  background-image: url(./img/1.8.png);
+  height: 1000px;
+  width: 1000px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-name {
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  color: white;
+  transition:text-shadow .2s;
+  cursor: pointer;
+}
+
+.main-name:hover {
+  text-shadow:0px 0px 5px rgba(255,255,255,1);
+}
+
+.main-name-0 {
+  top: 20%;
+  left: 55%;
+}
+
+.main-name-1 {
+  font-size: .8rem;
+  top: 22.2%;
+  left: 37.4%;
+}
+
+.main-name-2 {
+  /* color: #353535;
+  transition:text-shadow .5s; */
+  top: 19%;
+  left: 26.5%;
+}
+
+.main-name-2:hover {
+  /* text-shadow:0px 0px 2px rgba(0,0,0,1); */
+}
+
+.main-name-3 {
+  top: 25%;
+  left: 42%;
+}
+
+.main-name-4 {
+  top: 39%;
+  left: 35%;
+}
+
+.main-name-5 {
+  font-size: .8rem;
+  top: 42%;
+  left: 42.9%;
+}
+
+.main-name-6 {
+  top: 33%;
+  left: 46%;
+}
+
+.main-name-7 {
+  top: 41%;
+  left: 58%;
+}
+
+.main-name-8 {
+  font-size: .9rem;
+  top: 50%;
+  left: 59.2%;
+}
+
+.main-name-9 {
+  top: 51.5%;
+  left: 39%;
+}
+
+.main-name-10 {
+  top: 64.3%;
+  left: 36%;
+}
+
+.main-name-11 {
+  font-size: .9rem;
+  top: 61.5%;
+  left: 35.2%;
+}
+
+.main-name-12 {
+  top: 57%;
+  left: 53%;
+}
+
+.main-name-13 {
+  font-size: .8rem;
+  top: 60%;
+  left: 66.5%;
+}
+
+.main-name-14 {
+  font-size: .9rem;
+  top: 54.5%;
+  left: 67.5%;
+}
+
+.main-name-15 {
+  top: 90%;
+  left: 30.5%;
+}
+
+.main-name-16 {
+  font-size: .8rem;
+  /* color: #353535;
+  transition:text-shadow .5s; */
+  top: 19.7%;
+  left: 70%;
+}
+
+.main-name-16:hover {
+  /* text-shadow:0px 0px 2px rgba(0,0,0,1); */
+}
+
+.main-name-17 {
+  font-size: .7rem;
+  /* color: #353535;
+  transition:text-shadow .5s; */
+  top: 23%;
+  left: 76%;
+}
+
+.main-name-17:hover {
+  /* text-shadow:0px 0px 2px rgba(0,0,0,1); */
 }
